@@ -6,5 +6,6 @@ namespace Plugin.FirebaseAuth.Sample.Services
     public interface IGoogleService
     {
         Task<(string IdToken, string AccessToken)> GetCredentialAsync();
+        Task<bool> SignOut();
     }
 }

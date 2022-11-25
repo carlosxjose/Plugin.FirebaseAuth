@@ -6,5 +6,6 @@ namespace Plugin.FirebaseAuth.Sample.Services
     public interface IFacebookService
     {
         Task<string> GetCredentialAsync();
+        bool SignOutAsync();
     }
 }

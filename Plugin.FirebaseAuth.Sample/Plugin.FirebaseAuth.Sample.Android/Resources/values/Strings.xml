@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, Click Me!</string>
-    <string name="app_name">Plugin.FirebaseAuth.Sample.Droid</string>
-    <string name="facebook_app_id">[FACEBOOK_APP_ID]</string>
-    <string name="fb_login_protocol_scheme">fb[FACEBOOK_APP_ID]</string>
+    <string name="app_name">InterFecoop</string>
+    <string name="facebook_app_id">424648156385390</string>
+    <string name="fb_login_protocol_scheme">fb424648156385390</string>
 </resources>

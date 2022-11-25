@@ -103,6 +103,8 @@ namespace Plugin.FirebaseAuth.Sample.ViewModels
         {
             try
             {
+                await _googleService.SignOut();
+
                 var (idToken, accessToken) = await _googleService.GetCredentialAsync();
 
                 var credential = CrossFirebaseAuth.Current
@@ -129,6 +131,8 @@ namespace Plugin.FirebaseAuth.Sample.ViewModels
         {
             try
             {
+                _facebookService.SignOutAsync();
+
                 var accessToken = await _facebookService.GetCredentialAsync();
 
                 var credential = CrossFirebaseAuth.Current

@@ -3,7 +3,7 @@ namespace Plugin.FirebaseAuth.Sample
 {
     public static class Constants
     {
-        public const string GoogleIosClientId = "";
+        public const string GoogleIosClientId = "14020481095-98tkm9no1jevnn3jfe5vopeh1fhc2knn.apps.googleusercontent.com";//"";
         public const string GoogleIosUrlScheme = "";
         public const string GoogleIosRedirectUrl = GoogleIosUrlScheme + ":/oauth2redirect";
 
@@ -15,7 +15,7 @@ namespace Plugin.FirebaseAuth.Sample
         public const string TwitterConsumerSecret = "";
         public const string TwitterRedirectUrl = UrlScheme + "://authorize";
 
-        public const string FacebookClientId = "";
+        public const string FacebookClientId = "424648156385390";//"424648156385390|Nm6SWsNO6B7oupeYBFkRDeFetkM";//"";
         public const string FacebookUrlScheme = "fb" + FacebookClientId;
         public const string FacebookRedirectUrl = FacebookUrlScheme + "://authorize";
 

@@ -8,10 +8,13 @@ using System;
 using Plugin.CurrentActivity;
 using Plugin.FirebaseAuth.Sample.Droid.Services;
 using Plugin.FirebaseAuth.Sample.Services;
+using Android.Util;
+using Java.Security;
+using static Android.Content.PM.PackageManager;
 
 namespace Plugin.FirebaseAuth.Sample.Droid
 {
-    [Activity(Name = "com.plugin.firebaseauth.sample.MainActivity", Label = "Plugin.FirebaseAuth.Sample", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true,
+    [Activity(Label = "InterFecoop", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true,
               ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {

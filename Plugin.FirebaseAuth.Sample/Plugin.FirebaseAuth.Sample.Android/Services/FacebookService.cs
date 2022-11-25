@@ -46,6 +46,20 @@ namespace Plugin.FirebaseAuth.Sample.Droid.Services
             return result.AccessToken.Token;
         }
 
+        public bool SignOutAsync()
+        {
+            try
+            {
+                LoginManager.Instance.LogOut();
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         public void OnActivetyResult(int requestCode, Result resultCode, Intent data)
         {
             _callbackManager.OnActivityResult(requestCode, (int)resultCode, data);

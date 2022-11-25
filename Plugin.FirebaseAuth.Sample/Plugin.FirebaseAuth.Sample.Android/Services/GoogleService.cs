@@ -26,11 +26,25 @@ namespace Plugin.FirebaseAuth.Sample.Droid.Services
             _activity = activity;
 
             var gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DefaultSignIn)
-                .RequestIdToken(activity.GetString(Resource.String.default_web_client_id))
+                .RequestIdToken("14020481095-98tkm9no1jevnn3jfe5vopeh1fhc2knn.apps.googleusercontent.com")//"14020481095-483ecga25mmcgbr09uo0npolkvtvcehv.apps.googleusercontent.com")//activity.GetString(Resource.String.default_web_client_id))
                 .RequestEmail()
                 .Build();
 
             _client = GoogleSignIn.GetClient(activity, gso);
+        }
+
+        public async Task<bool> SignOut()
+        {
+            var account = GoogleSignIn.GetLastSignedInAccount(_activity);
+
+            if (account != null)
+            {
+                await _client.SignOutAsync();
+
+                return true;
+            }
+
+            return false;
         }
 
         public async Task<(string IdToken, string AccessToken)> GetCredentialAsync()
