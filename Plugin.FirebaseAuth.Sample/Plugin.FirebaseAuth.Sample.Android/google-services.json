@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "14020481095",
+    "project_id": "interfecoop",
+    "storage_bucket": "interfecoop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14020481095:android:d2c5c9b15cd503f549e162",
+        "android_client_info": {
+          "package_name": "com.cpconsulting.interfecoop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14020481095-ra2v1llhcbkpjodhrrhdmuiopkb709fq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cpconsulting.interfecoop",
+            "certificate_hash": "83ea0180e6690ebb6c0e2e4a626f8ede6a02b2cb"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKAbJyssgiX2B5uJM8yuZxwsYur5OJwbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14020481095-98tkm9no1jevnn3jfe5vopeh1fhc2knn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "14020481095-483ecga25mmcgbr09uo0npolkvtvcehv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cpconsulting.interfecoop"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
