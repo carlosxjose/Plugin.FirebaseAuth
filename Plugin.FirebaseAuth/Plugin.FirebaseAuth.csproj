@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="MSBuild.Sdk.Extras/2.1.2">
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid90;MonoAndroid10.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid12.0</TargetFrameworks>
         <AssemblyName>Plugin.FirebaseAuth</AssemblyName>
         <RootNamespace>Plugin.FirebaseAuth</RootNamespace>
         <PackageId>Plugin.FirebaseAuth</PackageId>
@@ -43,10 +43,10 @@
     <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
         <Compile Include="Android\**\*.cs" />
         <PackageReference Include="Plugin.CurrentActivity" Version="2.1.0.4" />
-        <PackageReference Include="Xamarin.Firebase.Auth" Version="119.3.1" PrivateAssets="contentFiles;analyzers" />
+        <PackageReference Include="Xamarin.Firebase.Auth" Version="121.0.8" PrivateAssets="contentFiles;analyzers" />
     </ItemGroup>
     <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
         <Compile Include="iOS\**\*.cs" />
-        <PackageReference Include="Xamarin.Firebase.iOS.Auth" Version="6.9.2" />
+        <PackageReference Include="Xamarin.Firebase.iOS.Auth" Version="8.10.0.3" />
     </ItemGroup>
 </Project>
